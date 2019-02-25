@@ -1,0 +1,54 @@
+
+
+<h1>Task table</h1>
+<input type="text" id="myInput" onkeyup="FilterTable()" placeholder="Filter for status..">
+<table width="100%" id="myTable">
+<thead>
+  <tr class="header">
+    <th class="nr" onclick="sortTable(0)">Task</th>
+    <th onclick="sortTable(1)">Deadline</th>
+    <th>Status </th>
+    <th>File</th>
+    <th>Options</th>
+  </tr>
+</thead>
+<tbody>
+  <% data.categories.forEach(function(item, index) { %>
+    <tr >
+      <td><%= item.taskName %></td>
+      <td><%= item.deadline %></td>
+      <%if (item.status=="Not started") { %>
+        <td class="background background__fail">
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+            <a href="#">Not started</a>
+          </td>
+          <% } %>
+
+      <%if (item.status=="Done") { %> 
+        <td class="background background__pass">
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+            <a href="#">Done</a>
+          </td>
+        <% } %>
+      
+        <%if (item.status=="In progress") { %>
+        <td class="background background__running">
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+            <a href="#">In progress</a>
+          </td>
+          <% } %>
+      <td><%= item.fileName %></td>
+      <td align="center">
+        <input type="radio" id="<%= index %>" class="radio" onclick="selectThis(this.id)"/>
+      </td>
+  </tr>
+</tbody>
+
+  <% }) %>
+</table>

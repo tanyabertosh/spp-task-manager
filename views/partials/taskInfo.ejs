@@ -1,0 +1,57 @@
+<form class="enter_info" action="/" method="post" enctype="multipart/form-data">
+    <div class="column-block">
+        <div class="row-block">
+            <div class="header2" ><h2>Enter task info:</h2> </div>
+        </div>	
+    </div>
+    <div class="column-block">
+        <div class="row-block">
+            <div class="column-block">
+                <div class="enter-text">
+                    <p>Task:</p>
+                    <input type="text" name="taskName" id="task">
+                </div>
+                <div class="enter-text">
+                    <p>Deadline:</p>
+                    <input type="date" name="deadline" id="date">
+                </div>
+                    
+            </div>
+            <div class="column-block">
+                <div class="enter-text">
+                    <p>Status:</p>
+                </div>
+                <div class="enter-text">
+                    <div class="styled-select" >
+                        <select name="status" id="status">
+                            <option value="Not started">Not started</option>
+                            <option value="In progress">In progress</option>
+                            <option value="Done">Done</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="enter-text">
+                    <!-- <input type="file" name="fileName" class="hide inputfile" id="upload" data-multiple-caption="{count} files selected" multiple />
+                    <label for="upload"><span>Upload</span></label> -->
+                    <div class="upload-btn-wrapper">
+                            <button class="btn">Upload a file</button>
+                            <input type="file" name="myfile"/>
+                          </div>
+                </div>	
+            </div>
+        </div>
+        <div class="row-block"> 
+                <button type="submit" class="action_button">OK</button>
+                <div id="del_btn">
+                    <input type="checkbox" id="check" name="check" />
+                    <label class="delete" for="check">
+                    <span><!-- This span is needed to create the "checkbox" element --></span>Delete
+                    </label>
+                </div>
+            </div>
+    </div>
+    
+    
+    <!-- <input type="button" class="action_button" id="del_btn" value="Delete" onclick="Delete()"> -->
+</form>
