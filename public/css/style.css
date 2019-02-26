@@ -87,7 +87,6 @@ body {
 }
 
 .section-block {
-	/* height: 100vh; 100% от окна браузера */
 	min-height: 400px;
     font-family: 'Monky';
 	color: #000;
@@ -100,7 +99,6 @@ table {
 	margin-left: 30px;
 }
 .table-section-block{
-    /* height: 100vh; 100% от окна браузера */
 	min-height: 400px;
     font-family: 'Monky';
 	color: #000;
@@ -194,19 +192,6 @@ li :hover {
 
 }
 
-
-.header2{
-	font-weight: bold;
-	font-size: 24px;
-	color: #CD5C5C;
-	margin-bottom: 10px; 
-}
-
-.header2 p{
-	opacity: 1;
-	color: white;
-}
-
 #del_btn {
 	visibility: hidden;
 	margin-top: 40px;
@@ -247,51 +232,6 @@ li :hover {
  
 .enter-text {
 	padding: 10px;
-}
-
-.styled-select {
-   height: 46px;
-   /* overflow: hidden; */
-   width: 240px;
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
-   background-color: #3b8ec2;
-   color: #fff;
-}
-
-.styled-select select {
-	background: transparent;
-	border: none;
-	font-size: 14px;
-	height: 29px;
-	padding: 5px; /* If you add too much padding here, the options won't show in IE */
-	width: 268px;
-	
- }
-
-.hide {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
-label[for="upload"] {
-	display: inline-block;
-	cursor:pointer;
-	padding: 10px 30px;
-	background-color: #FF5722;
-	color:#ffffff;
-	box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.25), 0 2px 10px 0 rgba(0, 0, 0, 0.20);
-	border-radius:2px;
-	transition: all 0.3s;
-}
-
-label[for="upload"]:hover {
-		box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25), 0 5px 18px 0 rgba(0, 0, 0, 0.20);
 }
 
 .border {

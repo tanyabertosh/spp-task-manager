@@ -126,7 +126,6 @@ function dropdown()
    
 }
 function dropdownTaskInfo(){
-	// document.body.style.backgroundImage = 'url(img/table-fon.jpg)';
     var x = document.getElementById("TaskInfo1");
     if (x.style.display !== "flex") {  
     	x.style.display = "flex";
@@ -149,13 +148,9 @@ function check_data(){
 
 function selectThis(x) {
     x++;
-    //console.log(x);
     dropdownTaskInfo();
     document.getElementById('del_btn').style.visibility="visible";
     var table = document.getElementById('myTable');
-    // for(var i=1;i<table.rows.length;i++){
-    //     table.rows[i].on
-    // }
     document.getElementById('task').value=table.rows[x].cells[0].innerHTML;
     document.getElementById('date').value=table.rows[x].cells[1].innerHTML;
     var textToFind=table.rows[x].getElementsByTagName('a')[0].text;
